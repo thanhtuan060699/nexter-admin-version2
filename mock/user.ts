@@ -44,7 +44,6 @@ export default {
     res.send({
       success: true,
       data: {
-        name: 'Serati Ma',
         avatar: 'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png',
         userid: '00000001',
         email: 'antdesign@alipay.com',
@@ -118,10 +117,10 @@ export default {
     },
   ],
   'POST /api/login/account': async (req: Request, res: Response) => {
-    console.log('voooo')
+    console.log('voooo');
     const { password, username, type } = req.body;
     await waitTime(2000);
-    console.log('vo day')
+    console.log('vo day');
     if (password === 'ant.design' && username === 'admin') {
       res.send({
         status: 'ok',
